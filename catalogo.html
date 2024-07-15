@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Il lessico nelle commedie aristofanee</title>
+		<link rel="icon" type="image/x-icon" href="img/aristofane.jpg">
+		<meta charset="UTF-8"  />
+		<meta name="description" content="Catalogo del sito dedicato al lessico di Aristofane"  />
+		<meta name="keywords" content="Commedie, lessico, testi" />
+		<meta name="author" content="Christian Iori"  />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="DC.Title" content="Gli Acarnesi"  />
+		<meta name="DC.Creator" content="Christian Iori"  />
+		<meta name="DC.Subject" content="Testi drammatici"  />
+		<meta name="DC.Subject" content="Commedie"  />
+		<meta name="DC.Description" content="Raccolta di testi di Aristofane in formato digitale"  />
+		<meta name="DC.Publisher" content="Università di Bologna"  />
+		<meta name="DC.Date" content="2024"  />
+		<meta name="DC.Type" content="Text"   />
+		<meta name="DC.Format" content="HTML"  />
+		<meta name="DC.Identifier" content="tbd"  />
+		<meta name="DC.Coverage" content="Bologna"  />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"   />
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+	</head>
+	<body>
+		<!--Navbar !-->
+		<nav class="navbar navbar-expand-lg" style="background-color: #00a3cc;">
+  			<div class="container-fluid">
+    			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        				<li class="nav-item">
+          				<a class="nav-link" aria-current="page" href="index.html">Home</a>
+        				</li>
+        				<li class="nav-item">
+          				<a class="nav-link" href="#">Introduzione</a>
+        				</li>
+        				<li class="nav-item">
+          				<a class="nav-link" href="#">Linea del tempo</a>
+        				</li>
+        				<li class="nav-item">
+          				<a class="nav-link" href="#">Autore</a>
+        				</li>
+        				<li class="nav-item dropdown">
+          					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Lessico
+          					</a>
+          					<ul class="dropdown-menu">
+            					<li><a class="dropdown-item" href="#">Lessico dell'ultimo testo inserito</a></li>
+            					<li><a class="dropdown-item" href="#">Lessico generale</a></li>
+          					</ul>
+        				</li>
+        				<li class="nav-item dropdown paginacorrente">
+          					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Testi
+          					</a>
+          					<ul class="dropdown-menu">
+            					<li><a class="dropdown-item" href="item.html">Ultimo testo inserito</a></li>
+            					<li><a class="dropdown-item" href="catalogo.html">Catalogo testi</a></li>
+          					</ul>
+        				</li>
+      				</ul>
+      				<form class="d-flex" role="search">
+        			<input class="form-control me-2" type="search" placeholder="Fai una ricerca" aria-label="Search">
+        			<button class="btn btn-info" type="submit">Cerca</button>
+      				</form>
+    			</div>
+  			</div>
+		</nav>
+		<div class="container text-center">
+  			<div class="row">
+    			<div class="col-sm-3 colonnasx">
+      				<ul class="breadcrumb">
+  						<li><a href="index.html">Home</a></li>
+  						<li>Catalogo</li>
+					</ul>
+					<div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+  						<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+  							<label class="btn btn-outline-info" for="vbtn-radio1">Ordine cronologico crescente</label>
+  						<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+  							<label class="btn btn-outline-info" for="vbtn-radio2">Ordine cronologico decrescente</label>
+  						<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+  							<label class="btn btn-outline-info" for="vbtn-radio3">Ordine alfabetico crescente</label>
+						<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
+  							<label class="btn btn-outline-info" for="vbtn-radio4">Ordine alfabetico decrescente</label>
+					</div>
+				</div>
+    			<div class="col-sm-9 colonnadx">
+    				<h2>Tutti i testi</h2>
+					<div id="myBtnContainer">
+  						<button class="bottone-elenco paginacorrente" onclick="filterSelection('all')">Mostra tutti</button>
+  						<button class="bottone-elenco" onclick="filterSelection('datate')">Opere datate</button>
+  						<button class="bottone-elenco" onclick="filterSelection('vincitrici')">Opere vincitrici</button>
+  						<button class="bottone-elenco" onclick="filterSelection('lenaiche')">Opere lenaiche</button>
+  						<button class="bottone-elenco" onclick="filterSelection('dionisiache')">Opere dionisiache</button>
+					</div>
+					<div class="row">
+  						<div class="column cat datate vincitrici lenaiche">
+    						<div class="content">
+      							<img src="img/Acarnesi.png" alt="Gli Acarnesi" style="width:100%">
+      							<h4>Gli Acarnesi</h4>
+     					 		<p>Lenee 425 a.C.</p>
+     					 		<a class="btn pill" href="item.html" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate vincitrici lenaiche">
+    						<div class="content">
+      							<img src="img/Cavalieri.jpg" alt="Lights" style="width:100%">
+      							<h4>I Cavalieri</h4>
+      							<p>Lenee 424 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+   		 					</div>
+  						</div>
+  						<div class="column cat dionisiache">
+    						<div class="content">
+      							<img src="img/Nuvole.png" alt="Le Nuvole" style="width:100%">
+      							<h4>Le Nuvole</h4>
+      							<p>Nuvole I Grandi Dionisie 423 a.C., Nuvole II ?</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate lenaiche">
+    						<div class="content">
+								<img src="img/Vespe.jpg" alt="Le Vespe" style="width:100%">
+      							<h4>Le Vespe</h4>
+      							<p>Lenee 422 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate">
+    						<div class="content">
+      							<img src="img/Pace.jpg" alt="La Pace" style="width:100%">
+      							<h4>La Pace</h4>
+      							<p>421 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate dionisiache">
+    						<div class="content">
+      							<img src="img/Uccelli.jpg" alt="Gli Uccelli" style="width:100%">
+      							<h4>Gli Uccelli</h4>
+      							<p>Grandi Dionisie 414 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate dionisiache">
+    						<div class="content">
+      							<img src="img/Tesmoforie.jpg" alt="Le Donne alle Tesmoforie" style="width:100%">
+      							<h4>Le Donne alle Tesmoforie</h4>
+      							<p>Grandi Dionisie 411 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate lenaiche">
+    						<div class="content">
+      							<img src="img/Lisistrata.jpg" alt="Lisistrata" style="width:100%">
+      							<h4>Lisistrata</h4>
+      							<p>Lenee 411 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat vincitrici datate lenaiche">
+   							<div class="content">
+      							<img src="img/Rane.jpg" alt="Le Rane" style="width:100%">
+      							<h4>Le Rane</h4>
+      							<p>Lenee 405 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat datate">
+   							<div class="content">
+      							<img src="img/Donne.jpg" alt="Le Donne al Parlamento" style="width:100%">
+      							<h4>Le Donne al Parlamento</h4>
+      							<p>392/391 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+  						<div class="column cat lenaiche datate">
+   							<div class="content">
+      							<img src="img/Pluto.jpg" alt="Pluto" style="width:100%">
+      							<h4>Pluto</h4>
+      							<p>Lenee 388 a.C.</p>
+      							<a class="btn pill" href="#" role="button"><span>Vai al testo</span></a>
+    						</div>
+  						</div>
+					</div>
+					<div class="pagination">
+  						<a href="#">&laquo;</a>
+  						<a href="#" class="paginacorrente">1</a>
+  						<a href="#">2</a>
+  						<a href="#">3</a>
+  						<a href="#">4</a>
+  						<a href="#">5</a>
+  						<a href="#">6</a>
+  						<a href="#">&raquo;</a>
+					</div>
+      			</div>
+    		</div>
+  		</div>
+		<div class="pre-footer"> &#128210; <a class="link" href="#">Credits</a> | <a class="link" href="http://creativecommons.org/licenses/by/4.0/">Licenze</a> &#128210;</div>
+		<footer>
+			<div class="footer">&copy; Christian Iori&#128511; 2024- corso di Digital Humanities e Patrimonio Culturale </div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+  			acc[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var panel = this.nextElementSibling;
+    		if (panel.style.display === "block") {
+      		panel.style.display = "none";
+    		} else {
+      		panel.style.display = "block";
+    		}
+  			});
+			}
+		</script>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<script type="text/javascript">
+			filterSelection("all") // Execute the function and show all columns
+			function filterSelection(c) {
+  			var x, i;
+  			x = document.getElementsByClassName("column");
+  				if (c == "all") c = "";
+  			// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  			for (i = 0; i < x.length; i++) {
+   			 w3RemoveClass(x[i], "show");
+    			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  				}
+				}
+
+			// Show filtered elements
+				function w3AddClass(element, name) {
+  				var i, arr1, arr2;
+  				arr1 = element.className.split(" ");
+  					arr2 = name.split(" ");
+  				for (i = 0; i < arr2.length; i++) {
+    			if (arr1.indexOf(arr2[i]) == -1) {
+    			  element.className += " " + arr2[i];
+   				 }
+  				}
+				}
+
+			// Hide elements that are not selected
+				function w3RemoveClass(element, name) {
+  			var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+  			arr2 = name.split(" ");
+ 			 for (i = 0; i < arr2.length; i++) {
+ 				   while (arr1.indexOf(arr2[i]) > -1) {
+  			    arr1.splice(arr1.indexOf(arr2[i]), 1);
+  				  }
+ 					 }
+  				element.className = arr1.join(" ");
+					}
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("bottone");
+			for (var i = 0; i < btns.length; i++) {
+ 			 btns[i].addEventListener("click", function(){
+   			 var current = document.getElementsByClassName("paginacorrente");
+    		current[0].className = current[0].className.replace(" paginacorrente", "");
+    			this.className += "paginacorrente";
+  					});
+			}
+		</script>
+	</body>
+</html>
