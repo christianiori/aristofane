@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ca:metadata
-xmlns:ca="#"
+xmlns:ca="https://christianiori.github.io/aristofane/"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:dc="http://purl.org/dc/elements/1.1/"
 xmlns:dcterms="http://purl.org/dc/terms">
@@ -13,6 +13,6 @@ xmlns:dcterms="http://purl.org/dc/terms">
 <dc:type>Text</dc:type>
 <dc:coverage xsi:type="ca:GN" ca:ref="https://www.geonames.org/264371/athens.html"> </dc:coverage>
 <dc:format>HTML</dc:format>
-<dc:identifier>uri tbd di C.A.</dc:identifier>
+<dc:identifier>https://christianiori.github.io/aristofane/</dc:identifier>
 <dc:source>Acharnenses Aristophanes Ed. Coulon, V., Paris, Les Belles Lettres, 1923 Rist. 1967</dc:source>
 </ca:metadata>
